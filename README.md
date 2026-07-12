@@ -9,7 +9,7 @@ This repository presents an end-to-end **silicon photonics design and characteri
 Originally developed through the **University of British Columbia (UBC) Phot1x Silicon Photonics course**, this project was further extended into an independent design study with additional focus on **process variation analysis, automated layout generation, and measurement-based device validation**.
 
 📄 **IEEE-format technical report:**  
-[`MZI_Technical_Report.pdf`](./report/Design and Characterization of Silicon Photonic.pdf)
+[`MZI_Technical_Report.pdf`](./report/Silicon_Photonics_MZI_Report.pdf)
 
 ---
 

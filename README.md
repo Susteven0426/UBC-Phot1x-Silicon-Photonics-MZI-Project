@@ -107,21 +107,21 @@ The consistency between both approaches validates the reliability of the simulat
 
 The SOI strip waveguide was simulated using Lumerical MODE FDE solver to extract optical mode properties, effective index, and group index at 1550 nm.
 
-![Waveguide Mode](images/E_intensity.png)
+<img src="images/Electric_field_intensity_of_TE_mode.png" width="450">
 
 
 ## 2. PIC Layout Design (KLayout + SiEPIC EBeam PDK)
 
 Eight MZI devices were designed with different optical path differences ($\Delta L$ = 0–250 μm), including FSR sweep devices, a balanced reference, and duplicate structures for repeatability analysis.
 
-![MZI Layout](images/Layout.png)
+<img src="images/Layout.png" width="700">
 
 
 ## 3. Fabricated Device Measurement
 
 The fabricated MZI devices were characterized using automated optical measurement. Transmission spectra were analyzed through peak detection and FSR extraction.
 
-![Measured Spectrum](images/measured_spectra.png)
+<img src="images/measured_spectra.png" width="700">
 
 
 ## 4. Group Index Extraction and Model Verification
@@ -133,14 +133,14 @@ The waveguide group index was extracted using two independent approaches:
 
 The extracted values show strong agreement, validating both the compact model and measurement analysis workflow.
 
-![Group Index Validation](images/FSR_vs_invdL_meas.png)
+<img src="images/FSR_vs_invdL_meas.png" width="650">
 
 
 ## 5. Circuit Simulation and Measurement Comparison
 
 The MZI circuit behavior was simulated in Lumerical INTERCONNECT using the extracted compact model and compared with fabricated device measurements.
 
-![INTERCONNECT Simulation](images/Interconnect.png)
+<img src="images/Interconnect.png" width="600">
 ---
 
 # 🛠 Tools & Skills Demonstrated

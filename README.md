@@ -1,93 +1,214 @@
-# UBC-Phot1x-Silicon-Photonics-MZI-Project
+# Silicon Photonics MZI Design, Fabrication & Characterization
 
 ![Platform](https://img.shields.io/badge/Platform-SiEPIC%20EBeam-blue)
 ![Tools](https://img.shields.io/badge/Tools-Lumerical%20%7C%20KLayout%20%7C%20Python-green)
 ![Status](https://img.shields.io/badge/Status-Fabricated%20%26%20Measured-brightgreen)
 
-This repository documents a complete **silicon photonics design flow** of Mach–Zehnder Interferometers (MZIs), from waveguide simulation and circuit modeling to tape-out, measurement, and data analysis.
+This repository presents an end-to-end **silicon photonics design and characterization workflow** for Mach–Zehnder Interferometers (MZIs), covering the complete development cycle from waveguide simulation, circuit modeling, layout implementation, fabrication, measurement, and data analysis.
 
-The project is an extended work beyond the UBC Phot1x course, with additional focus on **process variation corner analysis**, **automated layout generation (gdsfactory)**, and **dual-method group index verification**.
+Originally developed through the **University of British Columbia (UBC) Phot1x Silicon Photonics course**, this project was further extended into an independent design study with additional focus on **process variation analysis, automated layout generation, and measurement-based device validation**.
 
-> 📄 **Full technical report** (IEEE format) is available in [`report/MZI_Technical_Report.pdf`](./report/MZI_Technical_Report.pdf).
-
----
-
-## 🧠 Design Flow Overview
-
-1. **Waveguide Simulation**  
-   - SOI strip waveguide modeled with **Lumerical MODE**  
-   - Extracted effective index, group index, and field distribution  
-   - Built 2nd-order Taylor expansion compact models for circuit simulation
-
-2. **Circuit Simulation**  
-   - MZI circuit simulated in **Lumerical INTERCONNECT**  
-   - Analyzed FSR dependence on ΔL  
-   - Corner analysis on waveguide width & thickness (±10 nm) for manufacturability
-
-3. **Layout & Tape-out**  
-   - 8 MZI variants with different ΔL designed in **KLayout + SiEPIC EBeam PDK**  
-   - Parameterized layout scripting with **Python gdsfactory**  
-   - Fabricated via UBC Electron Beam Lithography shuttle
-
-4. **Measurement & Analysis**  
-   - Custom Python/MATLAB scripts for spectral data processing  
-   - Peak detection, FSR extraction, group index calculation  
-   - Simulation vs. measurement comparison  
-   - Device repeatability analysis across multiple dies
+📄 **IEEE-format technical report:**  
+[`MZI_Technical_Report.pdf`](./report/MZI_Technical_Report.pdf)
 
 ---
 
-## 🔬 Key Results
+# 🧠 Design Flow Overview
 
-### Waveguide Mode Profile (TE, 1550 nm)
+## 1. Waveguide Simulation & Compact Modeling
+
+- SOI strip waveguide modeled using **Lumerical MODE**.
+- Extracted key optical parameters:
+  - Effective index ($n_{eff}$)
+  - Group index ($n_g$)
+  - Optical mode profile
+- Developed second-order Taylor expansion compact models for circuit-level simulation.
+
+**Objective:**  
+Establish accurate waveguide models for predicting MZI spectral behavior.
+
+---
+
+## 2. Circuit Simulation & Process Variation Analysis
+
+- MZI circuits simulated using **Lumerical INTERCONNECT**.
+- Analyzed Free Spectral Range (FSR) dependence on optical path difference ($\Delta L$).
+- Performed corner analysis considering fabrication variations:
+
+  - Waveguide width variation: ±10 nm
+  - Waveguide thickness variation: ±10 nm
+
+**Objective:**  
+Evaluate the impact of fabrication uncertainty on device performance and design robustness.
+
+---
+
+## 3. Layout Design & Fabrication
+
+- Designed **8 MZI variants** with different optical path differences:
+
+\[
+\Delta L = 0-250 \ \mu m
+\]
+
+- Layout implemented using:
+
+  - **KLayout**
+  - **SiEPIC EBeam PDK**
+
+- Developed parameterized layout generation workflow using:
+
+  - **Python gdsfactory**
+
+- Devices were fabricated through the:
+
+  - **UBC Electron Beam Lithography Shuttle**
+
+**Objective:**  
+Bridge the gap between simulated photonic devices and fabricated hardware.
+
+---
+
+## 4. Measurement & Data Analysis
+
+Developed Python and MATLAB analysis workflows for experimental characterization:
+
+- Optical spectrum processing
+- Automated peak detection
+- Free Spectral Range (FSR) extraction
+- Group index extraction
+- Simulation versus measurement comparison
+- Device repeatability analysis
+
+---
+
+# 🔬 Key Achievements & Results
+
+By bridging the gap between simulation and fabrication, this project demonstrates complete **simulation-to-measurement validation** of silicon photonic devices.
+
+Key performance metrics include:
+
+- **<2.7% deviation** between simulated and measured waveguide group index.
+
+- **<0.7% FSR variation** between identical fabricated devices, demonstrating strong device repeatability.
+
+- Developed two independent approaches for waveguide group index extraction:
+
+  1. Simulation-based extraction using Lumerical MODE.
+  2. Measurement-based extraction using MZI spectral characteristics.
+
+The consistency between both approaches validates the reliability of the simulation model and measurement analysis workflow.
+
+---
+
+# 📊 Technical Results
+
+## Waveguide Mode Profile (TE Mode, 1550 nm)
+
 ![Waveguide mode](images/waveguide_mode.png)
 
-### MZI Layout (KLayout)
+
+## MZI Layout Design (KLayout)
+
 ![MZI Layout](images/mzi_layout.png)
 
-### Group Index – MODE Simulation vs. FSR Extraction
+
+## Group Index Validation
+
 ![Group index comparison](images/group_index_analysis.png)
 
-*Two independent methods converge to consistent group index values, verifying both the simulation model and the measurement extraction pipeline.*
+Two independent extraction methods show strong agreement, validating both the simulation model and experimental analysis pipeline.
 
-### Measured vs. Simulated MZI Spectrum
+
+## Simulated vs. Measured MZI Spectrum
+
 ![Measurement vs Simulation](images/measurement_vs_sim.png)
 
----
-
-## 🛠 Tools & Skills Demonstrated
-
-- **Photonics Design**: Lumerical MODE, INTERCONNECT
-- **Layout**: KLayout, SiEPIC EBeam PDK, gdsfactory (Python)
-- **Data Analysis**: Python (NumPy, SciPy, Matplotlib), MATLAB
-- **Fabrication**: UBC EBeam shuttle, process variation awareness
-- **Documentation**: IEEE-style technical report writing
+The measured device response shows strong agreement with the circuit simulation results, demonstrating successful design verification.
 
 ---
 
-## 📁 Repository Contents
+# 🛠 Tools & Skills Demonstrated
+
+## Photonic Simulation
+
+- Lumerical MODE
+- Lumerical INTERCONNECT
+
+## PIC Layout Implementation
+
+- KLayout
+- SiEPIC EBeam PDK
+- Python gdsfactory
+
+## Data Analysis
+
+- Python:
+  - NumPy
+  - SciPy
+  - Matplotlib
+
+- MATLAB
+
+## Fabrication & Characterization
+
+- UBC EBeam Shuttle fabrication flow
+- Optical measurement analysis
+- Process variation awareness
+- Simulation and experimental validation
+
+## Documentation
+
+- IEEE-format technical report writing
+- Technical data visualization
+
+---
+
+# 📁 Repository Contents
 
 | Folder/File | Description |
 |------------|-------------|
-| `report/` | Full technical report (PDF) |
-| `images/` | Simulation & measurement figures |
-| `scripts/` | Python analysis scripts (peak detection, FSR extraction, etc.) |
-| `README.md` | This overview |
+| `report/` | IEEE-format technical report (PDF) |
+| `images/` | Simulation and measurement figures |
+| `scripts/` | Python/MATLAB analysis scripts |
+| `README.md` | Project overview |
 
 ---
 
-## 👤 About the Author
+# 👤 About the Author
 
-**Sheng-Xun Su (蘇聖勛)**  
-M.S. in Electro-Optical Engineering, National Central University, Taiwan  
-Background: semiconductor wafer fab manufacturing (3.8 years) + optical material characterization  
-Career focus: **Silicon Photonics IC Design**
+**Sheng-Xun Su (蘇聖勛)**
 
-- 📧 [Your Email]  
-- 🔗 [LinkedIn or personal website if any]
+M.S. in Electro-Optical Engineering  
+National Central University, Taiwan
+
+## Background
+
+- 3.8 years semiconductor wafer fabrication experience
+- Optical material characterization research
+- Silicon photonics IC design and device characterization
+
+## Career Focus
+
+**Silicon Photonics IC Design | Photonic Integrated Circuits (PIC)**
+
+Technical interests:
+
+- Silicon photonic device design
+- Photonic integrated circuits
+- Optical interconnect technologies
 
 ---
 
-## 📄 License
+# Contact
 
-This project is shared for portfolio demonstration under the MIT License.
+📧 Email: [Your Email]
+
+🔗 LinkedIn: [Your LinkedIn Profile URL]
+
+
+---
+
+# License
+
+This repository is shared for **portfolio demonstration and educational purposes**.

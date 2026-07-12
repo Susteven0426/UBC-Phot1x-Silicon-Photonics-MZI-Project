@@ -9,7 +9,7 @@ This repository presents an end-to-end **silicon photonics design and characteri
 Originally developed through the **University of British Columbia (UBC) Phot1x Silicon Photonics course**, this project was further extended into an independent design study with additional focus on **process variation analysis, automated layout generation, and measurement-based device validation**.
 
 📄 **IEEE-format technical report:**  
-[`MZI_Technical_Report.pdf`](./report/MZI_Technical_Report.pdf)
+[`MZI_Technical_Report.pdf`](./report/Design and Characterization of Silicon Photonic.pdf)
 
 ---
 
@@ -103,29 +103,44 @@ The consistency between both approaches validates the reliability of the simulat
 
 # 📊 Technical Results
 
-## Waveguide Mode Profile (TE Mode, 1550 nm)
+## 1. Waveguide Simulation (Lumerical MODE)
 
-![Waveguide mode](images/waveguide_mode.png)
+The SOI strip waveguide was simulated using Lumerical MODE FDE solver to extract optical mode properties, effective index, and group index at 1550 nm.
 
-
-## MZI Layout Design (KLayout)
-
-![MZI Layout](images/mzi_layout.png)
+![Waveguide Mode](images/E_intensity.png)
 
 
-## Group Index Validation
+## 2. PIC Layout Design (KLayout + SiEPIC EBeam PDK)
 
-![Group index comparison](images/group_index_analysis.png)
+Eight MZI devices were designed with different optical path differences ($\Delta L$ = 0–250 μm), including FSR sweep devices, a balanced reference, and duplicate structures for repeatability analysis.
 
-Two independent extraction methods show strong agreement, validating both the simulation model and experimental analysis pipeline.
+![MZI Layout](images/Layout.png)
 
 
-## Simulated vs. Measured MZI Spectrum
+## 3. Fabricated Device Measurement
 
-![Measurement vs Simulation](images/measurement_vs_sim.png)
+The fabricated MZI devices were characterized using automated optical measurement. Transmission spectra were analyzed through peak detection and FSR extraction.
 
-The measured device response shows strong agreement with the circuit simulation results, demonstrating successful design verification.
+![Measured Spectrum](images/measured_spectra.png)
 
+
+## 4. Group Index Extraction and Model Verification
+
+The waveguide group index was extracted using two independent approaches:
+
+- Direct calculation from Lumerical MODE simulation
+- Experimental extraction from measured MZI FSR
+
+The extracted values show strong agreement, validating both the compact model and measurement analysis workflow.
+
+![Group Index Validation](images/FSR_vs_invdL_meas.png)
+
+
+## 5. Circuit Simulation and Measurement Comparison
+
+The MZI circuit behavior was simulated in Lumerical INTERCONNECT using the extracted compact model and compared with fabricated device measurements.
+
+![INTERCONNECT Simulation](images/Interconnect.png)
 ---
 
 # 🛠 Tools & Skills Demonstrated

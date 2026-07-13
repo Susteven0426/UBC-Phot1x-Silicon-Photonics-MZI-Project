@@ -27,9 +27,6 @@ Originally developed through the **University of British Columbia (UBC) Phot1x S
 **Objective:**  
 Establish accurate waveguide models to predict MZI spectral behavior and enable reliable circuit-level simulation.
 
-**Objective:**  
-Establish accurate waveguide models for predicting MZI spectral behavior.
-
 ---
 
 ## 2. Circuit Simulation & Process Variation Analysis

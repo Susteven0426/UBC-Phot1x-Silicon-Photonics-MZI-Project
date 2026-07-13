@@ -185,7 +185,7 @@ National Central University, Taiwan
 
 ## Background
 
-- 3.5 years of semiconductor wafer fabrication experience
+- 3.5+ years of semiconductor wafer fabrication experience
 - Optical material characterization research
 - Silicon photonics device design and simulation
 

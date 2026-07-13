@@ -98,42 +98,39 @@ The consistency between both approaches validates the reliability of the simulat
 
 ## 1. Waveguide Simulation (Lumerical MODE)
 
-The SOI strip waveguide was simulated using Lumerical MODE FDE solver to extract optical mode properties, effective index, and group index at 1550 nm.
+The SOI strip waveguide was simulated using the Lumerical MODE FDE solver. The fundamental TE mode at 1550 nm was analyzed to extract key waveguide properties, including the effective index ($n_{eff}$), group index ($n_g$), and optical mode profile.
 
 <img src="images/Electric_field_intensity_of_TE_mode.png" width="450">
 
 
 ## 2. PIC Layout Design (KLayout + SiEPIC EBeam PDK)
 
-Eight MZI devices were designed with different optical path differences ($\Delta L$ = 0–250 μm), including FSR sweep devices, a balanced reference, and duplicate structures for repeatability analysis.
+The MZI layout was designed using KLayout with the SiEPIC EBeam PDK. Eight MZI devices were implemented by adjusting the optical path difference ($\Delta L$) to enable FSR analysis, group index extraction, and device repeatability evaluation.
 
 <img src="images/Layout.png" width="700">
 
 
-## 3. Fabricated Device Measurement
+## 3. MZI Measurement Data Analysis
 
-The fabricated MZI devices were characterized using automated optical measurement. Transmission spectra were analyzed through peak detection and FSR extraction.
+Transmission spectra from eight fabricated MZI devices were analyzed using MATLAB/Python-based workflows. Peak detection was applied to extract the free spectral range (FSR) from measured optical responses.
 
 <img src="images/measured_spectra.png" width="700">
 
 
-## 4. Group Index Extraction and Model Verification
+## 4. FSR-Based Group Index Extraction
 
-The waveguide group index was extracted using two independent approaches:
-
-- Direct calculation from Lumerical MODE simulation
-- Experimental extraction from measured MZI FSR
-
-The extracted values show strong agreement, validating both the compact model and measurement analysis workflow.
+The relationship between FSR and inverse path length difference ($1/\Delta L$) was analyzed to extract the group index. The measurement-based extraction was compared with the Lumerical MODE simulation result for model verification.
 
 <img src="images/FSR_vs_invdL_meas.png" width="650">
 
 
 ## 5. Circuit Simulation and Measurement Comparison
 
-The MZI circuit behavior was simulated in Lumerical INTERCONNECT using the extracted compact model and compared with fabricated device measurements.
+The MZI circuit was simulated in Lumerical INTERCONNECT using the extracted waveguide compact model. The simulated transmission behavior was compared with measured device characteristics to validate the design workflow.
+
 
 <img src="images/Interconnect.png" width="600">
+
 ---
 
 # 🛠 Tools & Skills Demonstrated
@@ -147,7 +144,6 @@ The MZI circuit behavior was simulated in Lumerical INTERCONNECT using the extra
 
 - KLayout
 - SiEPIC EBeam PDK
-- Python gdsfactory
 
 ## Data Analysis
 
@@ -156,14 +152,12 @@ The MZI circuit behavior was simulated in Lumerical INTERCONNECT using the extra
   - SciPy
   - Matplotlib
 
-- MATLAB
+## Device Validation & Data Analysis
 
-## Fabrication & Characterization
-
-- UBC EBeam Shuttle fabrication flow
-- Optical measurement analysis
-- Process variation awareness
-- Simulation and experimental validation
+- UBC EBeam Shuttle fabricated MZI devices
+- Optical spectrum analysis and FSR extraction
+- Simulation–measurement comparison
+- Process variation analysis
 
 ## Documentation
 
@@ -176,10 +170,9 @@ The MZI circuit behavior was simulated in Lumerical INTERCONNECT using the extra
 
 | Folder/File | Description |
 |------------|-------------|
-| `report/` | IEEE-format technical report (PDF) |
-| `images/` | Simulation and measurement figures |
-| `scripts/` | Python/MATLAB analysis scripts |
-| `README.md` | Project overview |
+| [`report/`](./report/) | IEEE-format technical report |
+| [`images/`](./images/) | Simulation and measurement results |
+| [`README.md`](./README.md) | Project overview |
 
 ---
 
@@ -187,14 +180,14 @@ The MZI circuit behavior was simulated in Lumerical INTERCONNECT using the extra
 
 **Sheng-Xun Su (蘇聖勛)**
 
-M.S. in Electro-Optical Engineering  
+M.S. in Optics and Photonics  
 National Central University, Taiwan
 
 ## Background
 
-- 3.8 years semiconductor wafer fabrication experience
+- 3.5 years of semiconductor wafer fabrication experience
 - Optical material characterization research
-- Silicon photonics IC design and device characterization
+- Silicon photonics device design and simulation
 
 ## Career Focus
 
@@ -210,9 +203,9 @@ Technical interests:
 
 # Contact
 
-📧 Email: [Your Email]
+📧 Email: [sususteven5245@gmail.com]
 
-🔗 LinkedIn: [Your LinkedIn Profile URL]
+🔗 LinkedIn: [[Your LinkedIn Profile URL](https://www.linkedin.com/in/sheng-xun-su-55b49634b/)]
 
 
 ---

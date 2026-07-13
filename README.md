@@ -57,16 +57,17 @@ Bridge the gap between simulated photonic devices and fabricated hardware throug
 
 ---
 
-## 4. Measurement & Data Analysis
+## 4. Experimental Data Analysis
 
-Developed Python and MATLAB analysis workflows for experimental characterization:
+- Analyzed measurement data from fabricated MZI devices using Python and MATLAB:
+  - Optical spectrum processing
+  - Automated peak detection
+  - FSR extraction
+  - Group index extraction
+  - Comparison between simulation and measurement results
 
-- Optical spectrum processing
-- Automated peak detection
-- Free Spectral Range (FSR) extraction
-- Group index extraction
-- Simulation versus measurement comparison
-- Device repeatability analysis
+**Objective:**  
+Evaluate fabricated device performance through data-driven analysis and simulation correlation.
 
 ---
 

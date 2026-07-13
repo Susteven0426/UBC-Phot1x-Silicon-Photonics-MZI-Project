@@ -6,7 +6,7 @@
 
 This repository presents an end-to-end **silicon photonics design and characterization workflow** for Mach–Zehnder Interferometers (MZIs), covering the complete development cycle from waveguide simulation, circuit modeling, layout implementation, fabrication, measurement, and data analysis.
 
-Originally developed through the **University of British Columbia (UBC) Phot1x Silicon Photonics course**, this project was further extended into an independent design study with additional focus on **process variation analysis, automated layout generation, and measurement-based device validation**.
+Originally developed through the **University of British Columbia (UBC) Phot1x Silicon Photonics course**, this project was further extended into an independent design study focusing on **MZI design, compact modeling, process variation analysis, and measurement-based device validation**.
 
 📄 **IEEE-format technical report:**  
 [`MZI_Technical_Report.pdf`](./report/Silicon_Photonics_MZI_Report.pdf)

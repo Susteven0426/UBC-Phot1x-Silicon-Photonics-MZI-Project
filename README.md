@@ -217,4 +217,4 @@ This project was developed based on the knowledge gained from:
 **UBCx Phot1x: Silicon Photonics Design, Fabrication and Data Analysis**  
 University of British Columbia (via edX)
 
-[Certificate]([certificate-link](https://courses.edx.org/certificates/b4bc0f594bcc48278c35074a0ffa536a))
+[Certificate](https://courses.edx.org/certificates/b4bc0f594bcc48278c35074a0ffa536a)

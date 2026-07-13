@@ -205,11 +205,16 @@ Technical interests:
 
 📧 Email: [sususteven5245@gmail.com]
 
-🔗 LinkedIn: [[Your LinkedIn Profile URL](https://www.linkedin.com/in/sheng-xun-su-55b49634b/)]
+🔗 LinkedIn: [[Sheng-Xun Su](https://www.linkedin.com/in/sheng-xun-su-55b49634b/)]
 
 
 ---
 
-# License
+## 📜 Certification
 
-This repository is shared for **portfolio demonstration and educational purposes**.
+This project was developed based on the knowledge gained from:
+
+**UBCx Phot1x: Silicon Photonics Design, Fabrication and Data Analysis**  
+University of British Columbia (via edX)
+
+[Certificate]([certificate-link](https://courses.edx.org/certificates/b4bc0f594bcc48278c35074a0ffa536a))

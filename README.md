@@ -45,15 +45,12 @@ Evaluate the impact of fabrication uncertainty on device performance and design 
 
 ## 3. Layout Design & Fabrication
 
-- Designed 8 MZI variants with different optical path differences:
-  - $\Delta L = 0$–250 $\mu$m
-- Layout was manually designed using:
-  - KLayout
-  - SiEPIC EBeam PDK
-- The designed devices were fabricated through the UBC Electron Beam Lithography Shuttle process.
+- Designed and laid out eight MZI devices with different path length differences ($\Delta L = 0$–$250\,\mu\text{m}$).
+- Implemented chip layout using KLayout with the SiEPIC EBeam PDK, including grating couplers, Y-branches, and device routing.
+- Fabricated devices were provided through the UBC Electron Beam Lithography Shuttle process for experimental characterization.
 
 **Objective:**  
-Bridge the gap between simulated photonic devices and fabricated hardware through a complete design-to-measurement workflow.
+Demonstrate a complete silicon photonics workflow from device simulation and layout design to fabricated-device characterization.
 
 ---
 

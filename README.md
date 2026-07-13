@@ -59,15 +59,19 @@ Bridge the gap between simulated photonic devices and fabricated hardware throug
 
 ## 4. Experimental Data Analysis
 
-- Analyzed measurement data from fabricated MZI devices using Python and MATLAB:
-  - Optical spectrum processing
-  - Automated peak detection
-  - FSR extraction
-  - Group index extraction
-  - Comparison between simulation and measurement results
+By bridging the gap between simulation and measured device data, this project demonstrates simulation-to-measurement validation of silicon photonic devices.
 
-**Objective:**  
-Evaluate fabricated device performance through data-driven analysis and simulation correlation.
+Key performance metrics include:
+
+- <2.7% deviation between simulated and measured group index.
+- <0.7% FSR variation between nominally identical fabricated devices, demonstrating strong device repeatability.
+
+Two independent approaches were developed for waveguide group index extraction:
+
+- Simulation-based extraction using Lumerical MODE.
+- Measurement-based extraction using MZI spectral characteristics.
+
+The consistency between both approaches validates the reliability of the simulation model and measurement analysis workflow.
 
 ---
 

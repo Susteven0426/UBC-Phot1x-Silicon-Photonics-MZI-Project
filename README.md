@@ -217,4 +217,4 @@ UBCx (University of British Columbia) through edX
 
 [Verify Certificate](https://courses.edx.org/certificates/b4bc0f594bcc48278c35074a0ffa536a)
 
-<img src="./images/UBCx_certificate.png" width="700">
+<img src="./images/UBCx_certificate.png" width="900">

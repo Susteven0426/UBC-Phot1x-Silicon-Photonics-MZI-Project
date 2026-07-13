@@ -17,12 +17,15 @@ Originally developed through the **University of British Columbia (UBC) Phot1x S
 
 ## 1. Waveguide Simulation & Compact Modeling
 
-- SOI strip waveguide modeled using **Lumerical MODE**.
+- Modeled SOI strip waveguides using Lumerical MODE FDE solver.
 - Extracted key optical parameters:
   - Effective index ($n_{eff}$)
   - Group index ($n_g$)
   - Optical mode profile
-- Developed second-order Taylor expansion compact models for circuit-level simulation.
+- Developed second-order Taylor expansion compact models for circuit-level simulation in Lumerical INTERCONNECT.
+
+**Objective:**  
+Establish accurate waveguide models to predict MZI spectral behavior and enable reliable circuit-level simulation.
 
 **Objective:**  
 Establish accurate waveguide models for predicting MZI spectral behavior.

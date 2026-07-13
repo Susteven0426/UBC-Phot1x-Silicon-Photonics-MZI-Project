@@ -212,9 +212,9 @@ Technical interests:
 
 ## 📜 Certification
 
-This project was developed based on the knowledge gained from:
+**Phot1x: Silicon Photonics Design, Fabrication and Data Analysis**  
+UBCx (University of British Columbia) through edX
 
-**UBCx Phot1x: Silicon Photonics Design, Fabrication and Data Analysis**  
-University of British Columbia (via edX)
+[Verify Certificate](https://courses.edx.org/certificates/b4bc0f594bcc48278c35074a0ffa536a)
 
-[Certificate](https://courses.edx.org/certificates/b4bc0f594bcc48278c35074a0ffa536a)
+<img src="./images/UBCx_certificate.png" width="700">
